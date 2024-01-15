@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+
+<div class="intercom">
+    <div class="intercom_header">
+        <img src="left arrow.png" alt="arrow">
+        <div class="widget_header">
+            <div class="avatar">
+                <img src="Avatars.png" alt="avatar" width="40" height="40">
+                <img class="circle" src="online status.png" alt="">
+            </div>
+            <div class="profile_details">
+                <h5>Hannah</h5>
+                <p>Active 1h ago</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- coversation starts here -->
+    <div class="conversation_frame">
+        <div class="conversation">
+            <div class="operator">
+                <img src="flash.png" alt="">
+                <div class="text">
+                    <p class="chat">👋 Hi there! How can I help?</p>
+                </div>
+            </div>
+
+
+            <div class="user">
+                <p class="chat">I’m sorry bot, but you’re wrong</p>
+            </div>
+
+
+            <div class="user">
+              <p class="chat">Can I talk to someone please?</p>
+            </div>
+
+
+            <div class="operator">
+                <img src="flash.png" alt="">
+                <div class="text">
+                    <p class="chat">No problem! Let me connect you to a customer support agent.</p>
+                </div>
+            </div>
+
+
+            <div id="operator">
+                <img class="picture" src="Avatars.png" alt="">
+                <div class="chat_frame">
+                <div class="text">
+                    <p class="chat">Hi there! I’m Hannah. <br>How can I help you?</p>
+                </div>
+                    <p>Hannah・Just now</p>
+                </div>
+            </div>
+
+            <div id="user">
+              <div class="chat_frame">
+              <div class="text">
+                  <p class="chat">Oh finally a human, wohoo!</p>
+              </div>
+              
+              </div>
+              <p>Just now・Not seen yet</p>
+          </div>
+        </div>
+        <!-- converstion ends here -->
+    </div>
+<!-- conversation frame ends here -->
+
+<div class="line"></div>
+
+<!-- input container starts here -->
+<div class="input_container">
+    <div class="reply_frame">
+      <input type="text" id="message-input" placeholder="Type a reply...">
+      <div class="icons">
+        <img src="Chips Text.png" alt="">
+        <img src="Chips Text emoji.png" alt="">
+        <img src="Chips Text emoji.png" alt="">
+      </div>
+  </div>
+</div>
+<!-- input container ends here -->
+<!-- ending intercomdiv is below -->
+</div>
+<div id="arrow" onclick="toggleIntercomChat()">
+    <span class="material-symbols-outlined">expand_less</span>
+</div>
+<script src="sandbox.js"></script>
+</body>
+</html>
